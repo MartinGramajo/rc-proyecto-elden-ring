@@ -178,6 +178,9 @@ body {
 .parallax.cover-3 {
   background-image: url(../assets/img/cover3.jpg);
 }
+.parallax.cover-4 {
+  background-image: url(../assets/img/cover4.jpg);
+}
 
 /*Navbar*/
 .nav {
@@ -459,4 +462,11 @@ body {
   .personajes {
     width: 380px;
   }
+}
+/*Footer*/
+footer {
+  margin-top: auto;
+  background-color: #020202;
+  height: 12vh;
+  color: white;
 }
