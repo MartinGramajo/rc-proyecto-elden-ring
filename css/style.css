@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "segoe ui";
+  background-image: url(../assets/img/cover2.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.color-dorado {
+  color: #c19d53;
+}
+
+.bg-dorado {
+  background-color: #c19d53;
+}
+
+.bg-dorado-transparent {
+  background-color: #c19c5347;
+}
+
+.color-blanco {
+  color: #fff;
+}
+
+.color-grey {
+  color: grey;
+}
+
+.peso-bold {
+  font-weight: bold;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.solo-pantallas-chicas {
+  display: block;
+}
+
+.solo-pantallas-grandes {
+  display: none;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.contenedor {
+  max-width: 960px;
+  margin: auto;
+}
+
+/*Navbar*/
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #020202;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #fff;
+  padding: 4px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 13px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+.logo-nav {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 50%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    right: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(50vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*Header*/
+.flex-column {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .flex-column {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .justify-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .solo-pantallas-chicas {
+    display: none;
+  }
+
+  .solo-pantallas-grandes {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .justify-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .solo-pantallas-chicas {
+    display: none;
+  }
+
+  .solo-pantallas-grandes {
+    display: block;
+  }
+}
+.banner-title {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .banner-title {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-title {
+    width: 40%;
+  }
+}
