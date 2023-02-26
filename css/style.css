@@ -189,6 +189,27 @@ body {
   background-image: url(../assets/img/cover6.jpg);
 }
 
+.parallax.cover-7 {
+  background-image: url(../assets/img/cover7.jpg);
+}
+
+.parallax.cover-8 {
+  background-image: url(../assets/img/cover8.jpg);
+}
+
+.parallax.cover-9 {
+  background-image: url(../assets/img/cover9.png);
+}
+.parallax.cover-10 {
+  background-image: url(../assets/img/cover10.jpg);
+}
+.parallax.cover-11 {
+  background-image: url(../assets/img/cover11.jpg);
+}
+.parallax.cover-12 {
+  background-image: url(../assets/img/cover12.jpg);
+}
+
 /*Navbar*/
 .nav {
   height: 50px;
@@ -471,6 +492,31 @@ body {
   }
 }
 
+/*section #4*/
+.premio-width {
+  width: 550px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.premios-banner {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.premio-width-responsive {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.premios-banner-responsive {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /*section#5*/
 .box-suscripto {
   display: flex;
@@ -541,7 +587,7 @@ body {
   transition: color 0.2s, background-color 0.2s;
 }
 
-/*section#6*/
+/*Noticias*/
 .d-grid {
   display: grid;
 }
@@ -624,6 +670,36 @@ body {
 
 .container-card {
   padding: 2px 16px;
+}
+
+/*Historia*/
+.d-grid {
+  display: grid;
+}
+
+.grid-list-container {
+  grid-template-columns: auto;
+}
+
+@media (min-width: 768px) {
+  .grid-list-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-list-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/*Store*/
+.bandai-store-imagen-icon {
+  width: 100px;
+}
+
+.bandai-store-imagen {
+  width: 400px;
 }
 
 /*Footer*/
