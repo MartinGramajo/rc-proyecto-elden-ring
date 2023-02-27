@@ -5,52 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2427e412fa.css" crossorigin="anonymous">
+
     <title>Elden Ring</title>
   </head>
   <body>
-    <!--nav-->
-    <nav class="nav" >
-      <input type="checkbox" id="nav-check">
-        <div class="nav-header ">
-          <div class="nav-title">
-            <a href="#banner" "><img class=" logo-nav" src="./assets/img/titlecel.jpg" alt="Elden Ring logo"></a>
-          </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <div class="nav-links">
-          <a href="./index.html">Home</a>
-          <a href="./noticias.html">Noticias</a>
-          <a href="./historia.html">Historia</a>
-          <a href="./store.html">Store</a>
-          <a href="./requisitos.html">Requisitos</a>
-        </div>
-    </nav>
-    <!--Header-->
-    <header  >
-      <div>
-        <video src=" https://static.bandainamcoent.eu/video/elden-ring-header-animated.webm" width="100%" autoplay mute loop>
-      </div>
-      <div class="position-center">
-        <img class="banner-title" src="./assets/img/titlecel.jpg" alt="Elden Ring logo">
-      </div>
-      <div class="text-center py-5" id="banner">
-        <div class="justify-content py-1 color-blanco">
-          <p> <span class="color-dorado peso-bold ">Fecha de lanzamiento: </span> 25/02/2022</p>
-          <p> <span class="color-dorado peso-bold ">Genero: </span> Rol </p>
-          <p> <span class="color-dorado peso-bold ">Desarrollador: </span>FromSoftware, Inc</p>
-        </div>
-        <div class="py-1 peso-bold">
-          <a class="color-blanco " href="https://es.bandainamcoent.eu/press/5032" target="_blank">PressKit</a>
-        </div>
-      </div>
+    <header class="header">
+      <!-- Logo -->
+      <a  href="./index.html"><img class="logo-nav" src="./assets/img/titlecel.jpg" alt="Elden Ring logo"></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <!-- Menu -->
+      <nav class="nav">
+          <ul class="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./noticias.html">Noticias</a></li>
+              <li><a href="./historia.html">Historia</a></li>
+              <li><a href="./store.html">Store</a></li>
+              <li><a href="./requisitos.html">Requisitos</a></li>
+          </ul>
+      </nav>
     </header>
     <main>
+      <!--Banner-->
+      <section>
+        <div>
+          <video src=" https://static.bandainamcoent.eu/video/elden-ring-header-animated.webm" width="100%" autoplay mute loop>
+        </div>
+        <div class="position-center">
+          <img class="banner-title" src="./assets/img/titlecel.jpg" alt="Elden Ring logo">
+        </div>
+        <div class="text-center py-5" id="banner">
+          <div class="justify-content py-1 color-blanco">
+            <p> <span class="color-dorado peso-bold ">Fecha de lanzamiento: </span> 25/02/2022</p>
+            <p> <span class="color-dorado peso-bold ">Genero: </span> Rol </p>
+            <p> <span class="color-dorado peso-bold ">Desarrollador: </span>FromSoftware, Inc</p>
+          </div>
+          <div class="py-1 peso-bold">
+            <a class="color-blanco " href="https://es.bandainamcoent.eu/press/5032" target="_blank">PressKit</a>
+          </div>
+        </div>
+      </section>
       <!-- section #1-->
       <section>
         <div class="bloque parallax cover-1"></div>

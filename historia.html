@@ -4,89 +4,185 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Elden Ring</title>
   </head>
   <body>
-    <!--nav-->
-    <nav class="nav" >
-      <input type="checkbox" id="nav-check">
-        <div class="nav-header ">
-          <div class="nav-title">
-            <a href="#banner" "><img class=" logo-nav" src="./assets/img/titlecel.jpg" alt="Elden Ring logo"></a>
-          </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        <div class="nav-links">
-          <a href="./index.html"">Home</a>
-          <a href="./noticias.html">Noticias</a>
-          <a href="./historia.html">Historia</a>
-          <a href="./store.html">Store</a>
-          <a href="./requisitos.html">Requisitos</a>
-        </div>
-    </nav>
+    <header class="header">
+      <!-- Logo -->
+      <a href="./index.html"
+        ><img
+          class="logo-nav"
+          src="./assets/img/titlecel.jpg"
+          alt="Elden Ring logo"
+      /></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <!-- Menu -->
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./noticias.html">Noticias</a></li>
+          <li><a href="./historia.html">Historia</a></li>
+          <li><a href="./store.html">Store</a></li>
+          <li><a href="./requisitos.html">Requisitos</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <!--section#4-->
       <section>
         <div class="bloque parallax cover-11"></div>
-        <div class="bloque" >
+        <div class="bloque">
           <article class="text-center py-3">
             <div>
               <div>
-                <img class="img-fluid" src="./assets/img/claveles.png" alt="claveles">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/claveles.png"
+                  alt="claveles"
+                />
               </div>
               <div class="py-3">
-                <h2 class="text-center py-2 py-1 color-blanco">Los Sinluz de las Tierras Intermedias</h2>
-                <div class="color-grey px-3 ">
-                  <p class="py-1 position-center">La Orden Dorada está rota. A lo largo y ancho de las Tierras Intermedias, semidioses poseedores de fragmentos del Círculo de Elden se enfrentan y combaten entre las ruinas de un reino
-                  otrora perfecto, hoy abandonado por las enseñanzas doradas de la Voluntad Mayor.</p>
-                  <p class="py-1 position-center">Mientras los ecos de la contienda retumban a lo lejos, una figura proscrita se acerca. Antaño, sus antepasados llamaron a las Tierras Intermedias su hogar, pero la bendita luz de la gracia se perdió para su pueblo y fueron expulsados del reino. Son los Sinluz, y han vuelto para reclamar el título de Elden prometido por la leyenda.</p>
-                  <p class="py-1 position-center">Este es el mundo de ELDEN RING. Conviértete en Sinluz y explora las Tierras Intermedias. Cabalgarás por vastas praderas, galoparás por suaves colinas y ascenderás hasta la cima de rocosos peñascos a lomos de tu efímero corcel para descubrir un mundo rebosante de vida y peligros.</p>
-                  <p class="py-1 position-center">En los vastos campos donde comienza tu periplo, criaturas míticas merodean en los páramos, horrores inimaginables acechan en las ciénagas y marismas y todo tipo de soldados y guerreros itinerantes esperan dar caza a los desprevenidos. Tímidas criaturas mordisquean la dulce hierba o se escabullen entre la maleza.</p>
-                  <p class="py-1 position-center">Los pocos habitantes que no han enloquecido o se han vuelto hostiles tratan de sobrevivir cerca de las ciudades en ruinas destruidas por la Devastación. Si los ayudas, puede que te ofrezcan las respuestas que buscas. Por encima de todos ellos, asentados en tierras usurpadas en las que trampas, secretos y guardianes abundan, los semidioses —señores corrompidos, otrora miembros de una noble familia real— regentan sus dominios con el implacable poder otorgado por los fragmentos del Círculo de Elden.</p>
+                <h2 class="text-center py-2 py-1 color-blanco">
+                  Los Sinluz de las Tierras Intermedias
+                </h2>
+                <div class="color-grey px-3">
+                  <p class="py-1 position-center">
+                    La Orden Dorada está rota. A lo largo y ancho de las Tierras
+                    Intermedias, semidioses poseedores de fragmentos del Círculo
+                    de Elden se enfrentan y combaten entre las ruinas de un
+                    reino otrora perfecto, hoy abandonado por las enseñanzas
+                    doradas de la Voluntad Mayor.
+                  </p>
+                  <p class="py-1 position-center">
+                    Mientras los ecos de la contienda retumban a lo lejos, una
+                    figura proscrita se acerca. Antaño, sus antepasados llamaron
+                    a las Tierras Intermedias su hogar, pero la bendita luz de
+                    la gracia se perdió para su pueblo y fueron expulsados del
+                    reino. Son los Sinluz, y han vuelto para reclamar el título
+                    de Elden prometido por la leyenda.
+                  </p>
+                  <p class="py-1 position-center">
+                    Este es el mundo de ELDEN RING. Conviértete en Sinluz y
+                    explora las Tierras Intermedias. Cabalgarás por vastas
+                    praderas, galoparás por suaves colinas y ascenderás hasta la
+                    cima de rocosos peñascos a lomos de tu efímero corcel para
+                    descubrir un mundo rebosante de vida y peligros.
+                  </p>
+                  <p class="py-1 position-center">
+                    En los vastos campos donde comienza tu periplo, criaturas
+                    míticas merodean en los páramos, horrores inimaginables
+                    acechan en las ciénagas y marismas y todo tipo de soldados y
+                    guerreros itinerantes esperan dar caza a los desprevenidos.
+                    Tímidas criaturas mordisquean la dulce hierba o se
+                    escabullen entre la maleza.
+                  </p>
+                  <p class="py-1 position-center">
+                    Los pocos habitantes que no han enloquecido o se han vuelto
+                    hostiles tratan de sobrevivir cerca de las ciudades en
+                    ruinas destruidas por la Devastación. Si los ayudas, puede
+                    que te ofrezcan las respuestas que buscas. Por encima de
+                    todos ellos, asentados en tierras usurpadas en las que
+                    trampas, secretos y guardianes abundan, los semidioses
+                    —señores corrompidos, otrora miembros de una noble familia
+                    real— regentan sus dominios con el implacable poder otorgado
+                    por los fragmentos del Círculo de Elden.
+                  </p>
                 </div>
               </div>
               <div class="py-3">
-                <img class="img-fluid" src="./assets/img/claveles.png" alt="">
+                <img class="img-fluid" src="./assets/img/claveles.png" alt="" />
               </div>
               <div class="d-grid grid-list-container">
                 <article>
-                  <img class="img-fluid" src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_12_4K.jpg?twic=v1/resize=790/step=10/quality=80"alt="imagen1">
+                  <img
+                    class="img-fluid"
+                    src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_12_4K.jpg?twic=v1/resize=790/step=10/quality=80"
+                    alt="imagen1"
+                  />
                 </article>
                 <article>
-                  <img class="img-fluid" src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_05_4K.jpg?twic=v1/resize=790/step=10/quality=80" alt="imagen2">
+                  <img
+                    class="img-fluid"
+                    src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_05_4K.jpg?twic=v1/resize=790/step=10/quality=80"
+                    alt="imagen2"
+                  />
                 </article>
-                <article> 
-                  <img class="img-fluid" src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_08_4K.jpg?twic=v1/resize=790/step=10/quality=80" alt="imagen3">
+                <article>
+                  <img
+                    class="img-fluid"
+                    src="https://p325k7wa.twic.pics/high/elden-ring/elden-ring/02-screenshots/ELDENRING_08_4K.jpg?twic=v1/resize=790/step=10/quality=80"
+                    alt="imagen3"
+                  />
                 </article>
               </div>
               <div class="py-3">
-                <img class="img-fluid" src="./assets/img/claveles.png" alt="">
+                <img class="img-fluid" src="./assets/img/claveles.png" alt="" />
               </div>
               <div class="py-3">
-                <div class="color-grey px-3 ">
-                  <p class="py-1 position-center">Las enseñanzas de las gracias perdidas —si las encuentras— te darán pistas para recuperar estos territorios de sus garras mediante la espada y hechizos, aunque no es necesario que sigas su camino.</p>
-                  <p class="py-1 position-center">Tú eliges: ¿ansías el poder o buscas la iluminación? Toma tus propias decisiones y moldea a tu personaje en consecuencia.</p>
-                  <p class="py-1 position-center">Elige las habilidades que se adapten mejor a tu estilo. Pon en práctica tus dotes de sigilo para evitar los peligros o pillar desprevenidos a los enemigos. Aprovecha el entorno, las condiciones climáticas y la hora del día para obtener ventaja. Aprende el arte del combate, en el que deberás leer las intenciones de tu enemigo y un movimiento elusivo bien calculado podrá suponer la diferencia entre la vida y la muerte. Monta a lomos de tu corcel en combates contra mercenarios y derríbalos de sus monturas. Domina los hechizos arcanos de los maestros que lograron sobrevivir entre las ruinas de la guerra. Invoca a espíritus familiares para girar las tornas a tu favor o pide a tus compañeros Sinluz que luchen a tu lado y te ayuden en tu aventura. O si lo prefieres, adéntrate en la compleja y sangrienta historia de la Devastación y descubre los secretos olvidados de los semidioses y su estirpe. Todos estos caminos y muchos más son posibles.</p>
-                  <p class="py-1 position-center">En última instancia, tu viaje quedará definido por tus propios anhelos. Cuanto más ambiciosos sean tus objetivos, más grande será el desafío. Si decides reclamar las Tierras Intermedias como tuyas, deberás luchar, por supuesto.</p>
-                  <p class="px-1 py-1 peso-bold position-center"> Y por supuesto, podrías morir.</p>
-                  <p class="px-1 py-1 peso-bold position-center">Pero regresarás para luchar de nuevo.</p>
-                  <p class="px-1 py-3 peso-bold position-center">Porque ¿de qué otra forma iba a nacer un campeón o un señor?</p>
+                <div class="color-grey px-3">
+                  <p class="py-1 position-center">
+                    Las enseñanzas de las gracias perdidas —si las encuentras—
+                    te darán pistas para recuperar estos territorios de sus
+                    garras mediante la espada y hechizos, aunque no es necesario
+                    que sigas su camino.
+                  </p>
+                  <p class="py-1 position-center">
+                    Tú eliges: ¿ansías el poder o buscas la iluminación? Toma
+                    tus propias decisiones y moldea a tu personaje en
+                    consecuencia.
+                  </p>
+                  <p class="py-1 position-center">
+                    Elige las habilidades que se adapten mejor a tu estilo. Pon
+                    en práctica tus dotes de sigilo para evitar los peligros o
+                    pillar desprevenidos a los enemigos. Aprovecha el entorno,
+                    las condiciones climáticas y la hora del día para obtener
+                    ventaja. Aprende el arte del combate, en el que deberás leer
+                    las intenciones de tu enemigo y un movimiento elusivo bien
+                    calculado podrá suponer la diferencia entre la vida y la
+                    muerte. Monta a lomos de tu corcel en combates contra
+                    mercenarios y derríbalos de sus monturas. Domina los
+                    hechizos arcanos de los maestros que lograron sobrevivir
+                    entre las ruinas de la guerra. Invoca a espíritus familiares
+                    para girar las tornas a tu favor o pide a tus compañeros
+                    Sinluz que luchen a tu lado y te ayuden en tu aventura. O si
+                    lo prefieres, adéntrate en la compleja y sangrienta historia
+                    de la Devastación y descubre los secretos olvidados de los
+                    semidioses y su estirpe. Todos estos caminos y muchos más
+                    son posibles.
+                  </p>
+                  <p class="py-1 position-center">
+                    En última instancia, tu viaje quedará definido por tus
+                    propios anhelos. Cuanto más ambiciosos sean tus objetivos,
+                    más grande será el desafío. Si decides reclamar las Tierras
+                    Intermedias como tuyas, deberás luchar, por supuesto.
+                  </p>
+                  <p class="px-1 py-1 peso-bold position-center">
+                    Y por supuesto, podrías morir.
+                  </p>
+                  <p class="px-1 py-1 peso-bold position-center">
+                    Pero regresarás para luchar de nuevo.
+                  </p>
+                  <p class="px-1 py-3 peso-bold position-center">
+                    Porque ¿de qué otra forma iba a nacer un campeón o un señor?
+                  </p>
                 </div>
               </div>
-                <div class="py-3">
-                  <img class="img-fluid" src="./assets/img/clavecierre.png" alt="">
-                </div>
+              <div class="py-3">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/clavecierre.png"
+                  alt=""
+                />
               </div>
-            </article>
-          </div>
-        </section>
+            </div>
+          </article>
+        </div>
+      </section>
       <!--section#5-->
       <section>
         <div class="bloque parallax cover-7"></div>
@@ -96,22 +192,30 @@
               <div class="box1 px-1">
                 <div class="box-suscripto py-3 color-dorado">
                   <h2 class="">No te pierdas de ninguna noticia</h2>
-                  <h3> Recibe las ultimas actualizaciones de tus juegos favoritos</h3>
+                  <h3>
+                    Recibe las ultimas actualizaciones de tus juegos favoritos
+                  </h3>
                   <div class="py-3">
                     <div class="text-center">
-                      <input class="input-suscribirse" type="text"> <button class="btn" type="button">ME SUSCRIBO!</button>
+                      <input class="input-suscribirse" type="text" />
+                      <button class="btn" type="button">ME SUSCRIBO!</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class=" box2 px-1 bg-dorado-transparent">
+              <div class="box2 px-1 bg-dorado-transparent">
                 <div class="box-suscripto py-3 color-dorado">
                   <h2>Síguenos</h2>
-                  <h3>Forma parte de la comunidad. </h3>
+                  <h3>Forma parte de la comunidad.</h3>
                   <div class="iconos-flex py-3">
                     <div>
                       <a href="">
-                        <img class="iconos-item " src="./assets/icons/face.png" alt="Avatar" style="width:100%">
+                        <img
+                          class="iconos-item"
+                          src="./assets/icons/face.png"
+                          alt="Avatar"
+                          style="width: 100%"
+                        />
                       </a>
                     </div>
                   </div>
