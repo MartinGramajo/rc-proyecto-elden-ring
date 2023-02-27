@@ -735,7 +735,19 @@ ul {
 }
 
 .bandai-store-imagen {
-  width: 400px;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .bandai-store-imagen {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bandai-store-imagen {
+    width: 400px;
+  }
 }
 
 /*Footer*/
