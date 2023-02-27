@@ -643,6 +643,15 @@ ul {
   }
 }
 
+.imagen {
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+.imagen:hover {
+  --escala: 0.9;
+  cursor: pointer;
+}
+
 .course {
   background-color: #c19d53;
   border-radius: 10px;
@@ -666,7 +675,7 @@ ul {
 }
 
 .course-preview {
-  background-color: #2a265f;
+  background-color: #c19d53;
   color: #fff;
   max-width: 250px;
 }
