@@ -416,7 +416,7 @@ ul {
     width: 40%;
   }
 }
-/*section#3 */
+/*slider personajes */
 
 .slideshow-container {
   max-width: 1000px;
@@ -523,7 +523,7 @@ ul {
   }
 }
 
-/*section #4*/
+/*Premios*/
 .premio-width {
   width: 550px;
   padding-top: 2rem;
@@ -548,7 +548,7 @@ ul {
   padding-bottom: 2rem;
 }
 
-/*section#5*/
+/*suscripción*/
 .box-suscripto {
   display: flex;
   flex-direction: column;
@@ -581,25 +581,9 @@ ul {
 }
 
 .iconos-item {
-  width: 20px !important;
+  width: 40px !important;
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .iconos-item {
-    width: 20px !important;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .iconos-item {
-    width: 40px !important;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }
 
 .btn {
@@ -648,11 +632,12 @@ ul {
 }
 
 .imagen {
+  width: 100%;
   transform: scale(var(--escala, 1));
   transition: transform 0.25s;
 }
 .imagen:hover {
-  --escala: 0.9;
+  --escala: 0.95;
   cursor: pointer;
 }
 
