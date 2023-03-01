@@ -34,6 +34,10 @@ body {
   color: #fff;
 }
 
+.color-negro {
+  color: #0a141d;
+}
+
 .color-grey {
   color: grey;
 }
@@ -145,7 +149,7 @@ body {
 }
 
 .bloque.parallax {
-  height: 600px;
+  height: 500px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -706,6 +710,10 @@ ul {
 
 .container-card {
   padding: 2px 16px;
+}
+
+.imagen-noticias {
+  width: 100%;
 }
 
 /*Historia*/
