@@ -226,8 +226,6 @@ ul {
 .header {
   background-color: rgba(0, 0, 0, 0.21);
   box-shadow: 1px 1px 5px 0px var(--gray);
-  position: sticky;
-  top: 0;
   width: 100%;
 }
 /* Logo */
@@ -243,8 +241,7 @@ ul {
 /* Nav menu */
 .nav {
   width: 100%;
-  height: 100%;
-
+  position: fixed;
   background-color: black;
   overflow: hidden;
 }
@@ -261,12 +258,11 @@ ul {
   transition: max-height 0.5s ease-out;
 }
 
-/* Menu Icon */
 .hamb {
   cursor: pointer;
   float: right;
   padding: 40px 20px;
-} /* Style label tag */
+}
 
 .hamb-line {
   background: white;
@@ -274,7 +270,7 @@ ul {
   height: 2px;
   position: relative;
   width: 24px;
-} /* Style span tag */
+}
 
 .hamb-line::before,
 .hamb-line::after {
@@ -297,7 +293,6 @@ ul {
   display: none;
 }
 
-/* Toggle menu icon */
 .side-menu:checked ~ nav {
   max-height: 100%;
 }
@@ -317,8 +312,8 @@ ul {
   .nav {
     max-height: none;
     top: 0;
-    position: relative;
     float: right;
+    position: relative;
     width: fit-content;
     background-color: transparent;
   }
@@ -426,6 +421,7 @@ ul {
 
 .mySlides {
   display: none;
+  z-index: -1 !important;
 }
 
 .prev,
@@ -633,12 +629,12 @@ ul {
 
 .imagen {
   width: 100%;
-  transform: scale(var(--escala, 1));
-  transition: transform 0.25s;
 }
 .imagen:hover {
   --escala: 0.95;
   cursor: pointer;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
 }
 
 .course {
